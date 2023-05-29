@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
 
+
 export default {
 
   components: {
@@ -20,4 +21,6 @@ export default {
   <AppFooter />
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+@use './styles/general'
+</style>
