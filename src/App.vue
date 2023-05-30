@@ -37,4 +37,5 @@ export default {
 
 @use "./assets/styles/general";
 @use "./assets/styles/_partials/reset" as *;
+@import "@fortawesome/fontawesome-free/css/all.css";
 </style>

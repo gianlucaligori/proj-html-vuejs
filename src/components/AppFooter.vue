@@ -5,23 +5,43 @@
     <footer>
         <div class="container_fluid d-flex flex-column justify-content-center align-items-center gap-5">
             <div>
-                <h3>Join Over <span class="orange_text">500.000</span> Students Enjoyng Avada Education Now</h3>
+                <h3>Join Over <span class="orange_text">500,000</span> Students Enjoyng Avada Education Now</h3>
+                <p class="text-center">Become Part of Avada University to Further Your Career</p>
             </div>
 
             <div class="input_box">
                 <input type="name" name="" id="" placeholder="Name">
                 <input type="email" name="" id="" placeholder="Email">
-                <input type="tel" name="" id="" placeholder="Telehpone">
+                <input type="tel" name="" id="" placeholder="Telephone">
                 <input class="orange_submit" type="submit" value="Apply Now">
             </div>
         </div>
 
 
-        <div class="container">
-
+        <div class="container contacts_footer">
+            <!-- PRIMA UL FOOTER -->
             <ul>
-                <li></li>
+                <li>
+                    <i></i>
+                    <p>Residential Location 9521 Brooadsberry Avenue</p>
+                </li>
+                <li>
+                    <i></i>
+                    <p>1.800.458.556</p>
+                </li>
+                <li>
+                    <i></i>
+                    <p>info@your.domain.com</p>
+                </li>
+                <li>
+                    <i></i>
+                    Monday - Friday: 8:00 AM - 10:00 PM
+                </li>
             </ul>
+
+            <!-- SECONDA UL FOOTER -->
+            <ul></ul>
+
         </div>
     </footer>
 </template>
@@ -35,6 +55,10 @@
     height: 400px;
     background-color: $darkgrey;
     color: $white;
+
+    p {
+        color: $dirtwhite;
+    }
 
     .orange_text {
         color: $orange;

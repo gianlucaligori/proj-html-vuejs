@@ -174,7 +174,7 @@ export default {
 
 
     <!-- THREE CARDS -->
-    <div class="container_fluid third_sec three_cards">
+    <div class="container_fluid three_cards-sec three_cards">
         <div class="row">
             <div class="col-4 p-0 card_one">
                 <h3>COURSES</h3>
@@ -199,7 +199,7 @@ export default {
 
     <!-- THIRD SECTION -->
 
-    <section class="container text-center">
+    <section class="container text-center articles_sec">
         <img class="logo_lil p-2" src="../assets/images/page-logo-1.png" alt="">
         <h3 class="p-2">Today's University News</h3>
         <p class="p-2">Covering topics from classes to politics and student organization events</p>
@@ -211,13 +211,12 @@ export default {
                     <div class="card-body">
                         <img :src="articlesRandom.image" alt="">
 
-                        <h5 class="card-title"> {{ title }}</h5>
-                        <span> By <a href="#" class="btn btn-primary">{{ author }}</a></span>
-                        <span> | {{ published_at }} </span>
+                        <h5 class="card-title"> {{ articlesRandom.title }}</h5>
+                        <span> By <a href="#">{{ articlesRandom.author }}</a></span>
+                        <span> | {{ articlesRandom.published_at }} </span>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 </template>
@@ -271,7 +270,7 @@ ul {
     list-style: none;
 }
 
-.third_sec {
+.three_cards-sec {
     .row {
         height: 700px;
         max-width: 100%;
@@ -305,9 +304,21 @@ ul {
     p {
         color: $dirtwhite;
     }
+}
 
+.articles_sec {
+    h5 {
+        color: $orange;
+        font-size: 1.4rem;
+    }
 
+    a {
+        text-decoration: none;
+        color: $orange;
+    }
 
-
+    .card {
+        height: 200px; // ANCORA DA SISTEMARE E TOGLIERE ALTEZZA FISSA
+    }
 }
 </style>
