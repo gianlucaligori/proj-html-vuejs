@@ -19,7 +19,7 @@
 
 
         <div class="container contacts_footer">
-            <div>
+            <div class="ori_ul_1">
                 <!-- PRIMA UL FOOTER -->
 
                 <ul>
@@ -52,7 +52,7 @@
             </div>
 
             <!-- TERZA UL FOOTER -->
-            <div>
+            <div class="ver_ul_1">
                 <ul>
                     <h5>COURSES</h5>
                     <li>Arts & Humanities</li>
@@ -71,9 +71,28 @@
                 </ul>
             </div>
 
+            <div class="ver_ul_2">
+                <ul>
+                    <h5>RESOURCES</h5>
+                    <li>Campus Directory</li>
+                    <li>Academic Calendar</li>
+                    <li>Sport Clubs</li>
+                    <li></li>
+                    <li></li>
+                </ul>
 
-            <ul></ul>
+                <ul>
+                    <h5>QUICKLINKS</h5>
+                    <li>University Library</li>
+                    <li>Campus Services</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
 
+            <div class="up_events">
+                <h5>UPCOMING EVENTS</h5>
+                <li></li>
+            </div>
         </div>
     </footer>
 </template>
@@ -106,6 +125,29 @@
 
     .orange_submit {
         background-color: $orange;
+    }
+}
+
+.contacts_footer {
+    display: flex;
+
+    .ori_ul_1,
+    .ver_ul_1,
+    .ver_ul_2 {
+
+        ul {
+            list-style: none;
+        }
+    }
+
+    .ori_ul_1 {
+        display: flex;
+    }
+
+    .ver_ul_1,
+    .ver_ul_2 {
+        display: flex;
+        flex-direction: column;
     }
 }
 </style>

@@ -65,34 +65,40 @@ export default {
         <section>
             <div class="row m-5">
 
-                <div class="col-6">
-                    <h3>WORLD CLASS FACILITIES</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, doloribus. Omnis, quis incidunt quo
-                        tempora
-                        quia tenetur voluptatibus deserunt commodi magni quasi reprehenderit at ipsa sit autem non fugit
-                        placeat.</p>
+                <div class="col-6 wcf_art">
+                    <div>
+                        <h3>WORLD CLASS FACILITIES</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, doloribus. Omnis, quis incidunt quo
+                            tempora
+                            quia tenetur voluptatibus deserunt commodi magni quasi reprehenderit at ipsa sit autem non fugit
+                            placeat.</p>
+                    </div>
 
-                    <ul>
+                    <ul class="my-4 ul_icons">
                         <li>
-                            <span>International focus:</span> <span>Our students</span>
+                            <i class="fa-solid fa-globe"></i>
+                            <span> <strong> International focus-</strong> </span> <span>Our students</span>
                         </li>
                         <li>
-                            <span>International focus:</span> <span>Our students</span>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span> <strong> Residential courses-</strong></span> <span>Our students</span>
                         </li>
                         <li>
-                            <span>International focus:</span> <span>Our students</span>
+                            <i class="fa-solid fa-address-book"></i>
+                            <span> <strong> People not profits-</strong></span> <span>Our students</span>
                         </li>
                     </ul>
                 </div>
                 <!-- ACCORDION TENDINA 5 ELEMENTI -->
-                <div class="col-6">
+                <div class="col-6 accordion">
+                    <h3>OUR VALUES</h3>
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="true"
                                     aria-controls="flush-collapseOne">
-                                    Accordion Item #1
+                                    <h6>OUR MISSION</h6>
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -105,9 +111,9 @@ export default {
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="true"
                                     aria-controls="flush-collapseTwo">
-                                    Accordion Item #2
+                                    <h6>OUR PHILOSOPHY</h6>
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
@@ -120,9 +126,9 @@ export default {
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="true"
                                     aria-controls="flush-collapseThree">
-                                    Accordion Item #3
+                                    <h6>OUR COMMITMENT</h6>
                                 </button>
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse"
@@ -136,9 +142,9 @@ export default {
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="true"
                                         aria-controls="flush-collapseOne">
-                                        Accordion Item #1
+                                        <h6>OUR PROMISE</h6>
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -152,9 +158,9 @@ export default {
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="true"
                                         aria-controls="flush-collapseOne">
-                                        Accordion Item #1
+                                        <h6>OUR VALUES</h6>
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -205,11 +211,11 @@ export default {
         <p class="p-2">Covering topics from classes to politics and student organization events</p>
 
 
-        <div class="row">
+        <div class="row row_card">
             <div class="col-4" v-for="articlesRandom in store.arrArticles" :key="articlesRandom">
                 <div class="card">
-                    <div class="card-body">
-                        <img :src="articlesRandom.image" alt="">
+                    <div class="card-body p-0">
+                        <img :src="`src/assets/images/${articlesRandom.image}`" alt="">
 
                         <h5 class="card-title"> {{ articlesRandom.title }}</h5>
                         <span> By <a href="#">{{ articlesRandom.author }}</a></span>
@@ -308,17 +314,36 @@ ul {
 
 .articles_sec {
     h5 {
+        margin: .5rem;
         color: $orange;
-        font-size: 1.4rem;
+        font-size: 1rem;
+        text-align: start;
     }
 
     a {
         text-decoration: none;
         color: $orange;
     }
+}
 
-    .card {
-        height: 200px; // ANCORA DA SISTEMARE E TOGLIERE ALTEZZA FISSA
+.ul_icons {
+
+    i {
+        color: $orange;
+    }
+}
+
+.accordion {
+    h6 {
+        color: $orange;
+    }
+}
+
+.card-body {
+
+
+    img {
+        width: 100%;
     }
 }
 </style>
