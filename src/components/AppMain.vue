@@ -1,4 +1,14 @@
 <script>
+import { store } from "../store"
+
+
+export default {
+    data() {
+        return {
+            store,
+        }
+    }
+}
 </script>
 
 <template>
@@ -185,6 +195,31 @@
             </div>
         </div>
     </div>
+
+
+    <!-- THIRD SECTION -->
+
+    <section class="container text-center">
+        <img class="logo_lil p-2" src="../assets/images/page-logo-1.png" alt="">
+        <h3 class="p-2">Today's University News</h3>
+        <p class="p-2">Covering topics from classes to politics and student organization events</p>
+
+
+        <div class="row">
+            <div class="col-4" v-for="articlesRandom in store.arrArticles" :key="articlesRandom">
+                <div class="card">
+                    <div class="card-body">
+                        <img :src="articlesRandom.image" alt="">
+
+                        <h5 class="card-title"> {{ title }}</h5>
+                        <span> By <a href="#" class="btn btn-primary">{{ author }}</a></span>
+                        <span> | {{ published_at }} </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
@@ -244,20 +279,26 @@ ul {
 
     .card_one {
         background-image: url(../assets/images/home_courses_section_bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
     .card_two {
         background-image: url(../assets/images/home_events_section_bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
     .card_three {
         background-image: url(../assets/images/home_latest_news_section_bg.jpg);
+    }
+
+    .card_one,
+    .card_two,
+    .card_three {
         background-size: cover;
         background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
     }
 
     h3,
@@ -265,15 +306,8 @@ ul {
         color: $dirtwhite;
     }
 
-    .card_one,
-    .card_two,
-    .card_three {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
+
+
 
 }
 </style>
