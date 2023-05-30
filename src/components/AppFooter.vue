@@ -19,27 +19,59 @@
 
 
         <div class="container contacts_footer">
-            <!-- PRIMA UL FOOTER -->
-            <ul>
-                <li>
-                    <i></i>
-                    <p>Residential Location 9521 Brooadsberry Avenue</p>
-                </li>
-                <li>
-                    <i></i>
-                    <p>1.800.458.556</p>
-                </li>
-                <li>
-                    <i></i>
-                    <p>info@your.domain.com</p>
-                </li>
-                <li>
-                    <i></i>
-                    Monday - Friday: 8:00 AM - 10:00 PM
-                </li>
-            </ul>
+            <div>
+                <!-- PRIMA UL FOOTER -->
 
-            <!-- SECONDA UL FOOTER -->
+                <ul>
+                    <h5>AVADA UNIVERSITY</h5>
+                    <li>
+                        <i></i>
+                        <p>Residential Location 9521 Brooadsberry Avenue</p>
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>1.800.458.556</p>
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>info@your.domain.com</p>
+                    </li>
+                    <li>
+                        <i></i>
+                        Monday - Friday: 8:00 AM - 10:00 PM
+                    </li>
+                </ul>
+
+                <!-- SECONDA UL FOOTER -->
+                <ul>
+                    <h5>RECENT POSTS</h5>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <!-- TERZA UL FOOTER -->
+            <div>
+                <ul>
+                    <h5>COURSES</h5>
+                    <li>Arts & Humanities</li>
+                    <li>Business & Managemenr</li>
+                    <li>Engineering & Technology</li>
+                    <li>Life Sciences & Medicine</li>
+                    <li>Natural Sciences</li>
+                </ul>
+
+                <ul>
+                    <h5>ADMISSIONS</h5>
+                    <li>Eligibility</li>
+                    <li>Application</li>
+                    <li>Review Process</li>
+                    <li>How to Apply</li>
+                </ul>
+            </div>
+
+
             <ul></ul>
 
         </div>

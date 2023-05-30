@@ -23,10 +23,10 @@ export default {
             </ul>
 
             <ul>
-                <li>icona</li>
-                <li>icona</li>
-                <li>icona</li>
-                <li>icona</li>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
             </ul>
         </div>
 
