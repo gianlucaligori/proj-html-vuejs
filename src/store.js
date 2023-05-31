@@ -32,7 +32,7 @@ export const store = reactive({
             "category": "UNI",
             "language": "IT",
             "country": "us",
-            "published_at": "March 16th. 2016"
+            "published_at": "Aprile 4th. 2016"
         },
         {
             "author": "Admin",
@@ -56,7 +56,7 @@ export const store = reactive({
             "category": "Uni",
             "language": "IT",
             "country": "us",
-            "published_at": "March 16th. 2016"
+            "published_at": "January 24th. 2016"
         }
     ]
 
