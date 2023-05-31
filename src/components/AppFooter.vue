@@ -1,9 +1,22 @@
 <script>
+import AppPostFooter from '../components/AppPostFooter.vue';
+import { store } from '../store';
+
+
+export default {
+    data() {
+        return {
+            store,
+        };
+    },
+    components: { AppPostFooter }
+}
+
 </script>
 
 <template>
     <footer>
-        <div class="container_fluid d-flex flex-column justify-content-center align-items-center gap-5">
+        <div class="container_fluid form_sign d-flex flex-column justify-content-center align-items-center gap-5">
             <div>
                 <h3>Join Over <span class="orange_text">500,000</span> Students Enjoyng Avada Education Now</h3>
                 <p class="text-center">Become Part of Avada University to Further Your Career</p>
@@ -18,7 +31,7 @@
         </div>
 
 
-        <div class="container contacts_footer">
+        <div class="container_fluid contacts_footer">
             <div class="ori_ul_1">
                 <!-- PRIMA UL FOOTER -->
 
@@ -45,9 +58,10 @@
                 <!-- SECONDA UL FOOTER -->
                 <ul>
                     <h5>RECENT POSTS</h5>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <AppPostFooter v-for="articlesRandom in store.arrArticles" :key="articlesRandom" :title="title"
+                        :published_at="published_at" />
+                    <li>Test</li>
+
                 </ul>
             </div>
 
@@ -89,9 +103,11 @@
                 </ul>
             </div>
 
-            <div class="up_events">
-                <h5>UPCOMING EVENTS</h5>
-                <li></li>
+            <div class="events">
+                <ul>
+                    <h5>UPCOMING EVENTS</h5>
+                    <li>Ciao</li>
+                </ul>
             </div>
         </div>
     </footer>
@@ -102,7 +118,7 @@
 @import "../assets/styles/_partials/reset";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.container_fluid {
+.form_sign {
     height: 400px;
     background-color: $darkgrey;
     color: $white;
@@ -130,13 +146,22 @@
 
 .contacts_footer {
     display: flex;
+    justify-content: space-evenly;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    background-image: url(../assets/images/university_ft_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .ori_ul_1,
     .ver_ul_1,
-    .ver_ul_2 {
+    .ver_ul_2,
+    .events {
 
         ul {
+            font-size: larger;
             list-style: none;
+            margin: 1rem;
         }
     }
 

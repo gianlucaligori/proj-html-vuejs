@@ -13,7 +13,7 @@ export default {
 
 <template>
     <!-- INIZIO JUMBO -->
-    <div class="jumbo d-flex flex-column justify-content-center align-items-center">
+    <div class="container-fluid jumbo d-flex flex-column justify-content-center align-items-center">
 
         <h2>Inspiring Tomorrow Leaders</h2>
         <h3>The Future Belongs To Those Who See Possibilities Today</h3>
@@ -26,7 +26,7 @@ export default {
 
 
 
-    <!-- PRIMA SEZIONE -->
+    <!-- PRIMA SEZIONE INSPIRED BY -->
     <div class="container first_cont">
         <section class="first_sec text-center">
             <img class="logo_lil p-2" src="../assets/images/page-logo-1.png" alt="">
@@ -60,7 +60,7 @@ export default {
 
 
 
-    <!-- SECONDA SEZIONE -->
+    <!-- SECONDA SEZIONE WORLD CLASS FACILITIES -->
     <div class="container second_cont">
         <section>
             <div class="row m-5">
@@ -180,7 +180,7 @@ export default {
 
 
     <!-- THREE CARDS -->
-    <div class="container_fluid three_cards-sec three_cards">
+    <div class="container-fluid three_cards-sec three_cards">
         <div class="row">
             <div class="col-4 p-0 card_one">
                 <h3>COURSES</h3>
@@ -235,6 +235,7 @@ export default {
 .jumbo {
     background-image: url(../assets/images/home_main_slider_bg.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     height: 650px;
     color: $dirtwhite;
