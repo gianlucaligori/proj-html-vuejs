@@ -317,13 +317,17 @@ ul {
     h5 {
         margin: .5rem;
         color: $orange;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: start;
     }
 
     a {
         text-decoration: none;
         color: $orange;
+    }
+
+    .row_card {
+        margin-top: 5rem;
     }
 }
 
